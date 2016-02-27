@@ -1,6 +1,6 @@
 # RFID_Transports
 Aplicación Android creada como parte del TFG realizado en la Escuela Superior de Ingeniería - UCA
-Aplicación de gestión de alertas para pagos seguros mediante tarjetas Mifare Classic.
+Aplicación de gestión de alertas mediante la plataforma creada para pagos seguros mediante tarjetas MIFARE CLASSIC.
 
 
 ## Logotipo de la aplicación:
