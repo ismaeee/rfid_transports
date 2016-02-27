@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="18dp"
+        android:background="@color/white"
+        android:elevation="1sp"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="5dp">
+
+
+            <!-- Imagen de perfil -->
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/imagenUsuario"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginLeft="10dp"
+                android:layout_centerInParent="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="15dp"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/ic_user_default"
+                />
+
+
+
+            <TextView
+                android:id="@+id/idUsuarioTab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/adIdentificador"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:layout_toRightOf="@id/imagenUsuario"/>
+
+            <TextView
+                android:id="@+id/idUsuario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14dp"
+                android:textStyle="normal"
+                android:layout_toRightOf="@id/idUsuarioTab"
+                />
+
+
+            <TextView
+                android:id="@+id/userTab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/adUsername"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:layout_toRightOf="@id/imagenUsuario"
+                android:layout_below="@+id/idUsuario"/>
+            <TextView
+                android:id="@+id/user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14dp"
+                android:textStyle="normal"
+                android:layout_below="@+id/idUsuario"
+                android:layout_toRightOf="@id/userTab"/>
+
+
+            <TextView
+                android:id="@+id/nombreTab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/adNombre"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:layout_toRightOf="@id/imagenUsuario"
+                android:layout_below="@+id/user"/>
+            <TextView
+                android:id="@+id/nombre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14dp"
+                android:textStyle="normal"
+                android:layout_below="@+id/user"
+                android:layout_toRightOf="@id/nombreTab"/>
+
+
+            <TextView
+                android:id="@+id/apellidosTab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/adApellidos"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:layout_toRightOf="@id/imagenUsuario"
+                android:layout_below="@+id/nombre"/>
+            <TextView
+                android:id="@+id/apellidos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14dp"
+                android:textStyle="normal"
+                android:layout_below="@+id/nombre"
+                android:layout_toRightOf="@id/apellidosTab"/>
+
+
+            <TextView
+                android:id="@+id/dniTab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/adDNI"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:layout_toRightOf="@id/imagenUsuario"
+                android:layout_below="@+id/apellidos"/>
+            <TextView
+                android:id="@+id/dni"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14dp"
+                android:textStyle="normal"
+                android:layout_below="@+id/apellidos"
+                android:layout_toRightOf="@id/dniTab"/>
+
+
+            <TextView
+                android:id="@+id/emailTab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/adEmail"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:layout_toRightOf="@id/imagenUsuario"
+                android:layout_below="@+id/dni"/>
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14dp"
+                android:textStyle="normal"
+                android:layout_below="@+id/dni"
+                android:layout_toRightOf="@id/emailTab"/>
+
+
+            <TextView
+                android:id="@+id/telefonoTab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/adTelefono"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:layout_toRightOf="@id/imagenUsuario"
+                android:layout_below="@+id/email"/>
+            <TextView
+                android:id="@+id/telefono"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14dp"
+                android:textStyle="normal"
+                android:layout_below="@+id/email"
+                android:layout_toRightOf="@id/telefonoTab"/>
+
+        </RelativeLayout>
+
+
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            android:dividerHeight="0dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

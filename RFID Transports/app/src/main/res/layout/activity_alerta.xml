@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <fr.castorflex.android.smoothprogressbar.SmoothProgressBar
+        android:id="@+id/smoothProgressBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="0dp"
+        android:indeterminate="true"
+        android:minHeight="4dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:background="@color/white"
+            android:elevation="1sp"
+            android:orientation="vertical"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                >
+
+                <ImageView
+                    android:id="@+id/imagenAlerta"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="3dp"
+                    android:src="@mipmap/ic_error_black_48dp"
+                    android:tint="@color/holo_orange_light"
+                    android:tintMode="src_in" />
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/idTab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/adIdentificador"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    android:layout_toRightOf="@id/imagenAlerta"
+                    />
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:layout_toRightOf="@id/idTab"
+                    />
+
+                <TextView
+                    android:id="@+id/uidTab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/adUID"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    android:layout_toRightOf="@id/imagenAlerta"
+                    android:layout_below="@+id/id"
+                    />
+                <TextView
+                    android:id="@+id/uid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:layout_below="@id/id"
+                    android:layout_toRightOf="@id/uidTab"/>
+                <TextView
+                    android:id="@+id/saldoDBTab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/adSaldoDB"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    android:layout_below="@id/uid"
+                    android:layout_toRightOf="@id/imagenAlerta"
+                    />
+                <TextView
+                    android:id="@+id/saldoDB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:layout_below="@id/uid"
+                    android:layout_toRightOf="@id/saldoDBTab"
+
+                    />
+
+                <TextView
+                    android:id="@+id/saldoCardTab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/adSaldoCard"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    android:layout_toRightOf="@id/imagenAlerta"
+                    android:layout_below="@+id/saldoDB"/>
+                <TextView
+                    android:id="@+id/saldoCard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:layout_below="@+id/saldoDB"
+                    android:layout_toRightOf="@id/saldoCardTab"/>
+
+                <TextView
+                    android:id="@+id/fechaTab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/adFecha"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    android:layout_toRightOf="@id/imagenAlerta"
+                    android:layout_below="@+id/saldoCard"/>
+                <TextView
+                    android:id="@+id/fecha"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:layout_below="@+id/saldoCard"
+                    android:layout_toRightOf="@id/fechaTab"/>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_below="@id/fecha"
+                    android:layout_marginTop="30dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/descartar"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@mipmap/papelera"
+                        android:clickable="true"
+                        android:onClick="onClickDescartar"
+                        android:tintMode="src_in"
+                        android:tint="@color/tintIcon"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="20dp"
+                        />
+
+                    <ImageView
+                        android:id="@+id/blockCard"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@mipmap/ic_card_block_red_48dp"
+                        android:clickable="true"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:tintMode="src_in"
+                        android:tint="@color/tintIcon"
+                        android:onClick="onClickBloquear"
+                        />
+
+                    <ImageView
+                        android:id="@+id/localizacion"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@mipmap/ic_place_black_48dp"
+                        android:tintMode="src_in"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="30dp"
+                        android:tint="@color/tintIcon"
+                        android:clickable="true"
+                        android:onClick="onClickLocalizar"
+                        />
+                </LinearLayout>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="60dp">
+
+                <ImageView
+                    android:id="@+id/imagenUsuario"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:src="@mipmap/user_icon"
+                    android:tint="@color/holo_blue_dark"
+                    android:tintMode="src_in" />
+
+
+                <TextView
+                    android:id="@+id/idUsuarioTab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/adIdentificador"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    android:layout_toRightOf="@id/imagenUsuario"/>
+
+                <TextView
+                    android:id="@+id/idUsuario"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:textStyle="normal"
+                    android:layout_toRightOf="@id/idUsuarioTab"
+                    />
+
+
+                <TextView
+                    android:id="@+id/userTab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/adUsername"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    android:layout_toRightOf="@id/imagenUsuario"
+                    android:layout_below="@+id/idUsuario"/>
+                <TextView
+                    android:id="@+id/user"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:textStyle="normal"
+                    android:layout_below="@+id/idUsuario"
+                    android:layout_toRightOf="@id/userTab"/>
+
+
+                <TextView
+                    android:id="@+id/nombreTab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/adNombre"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    android:layout_toRightOf="@id/imagenUsuario"
+                    android:layout_below="@+id/user"/>
+                <TextView
+                    android:id="@+id/nombre"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:textStyle="normal"
+                    android:layout_below="@+id/user"
+                    android:layout_toRightOf="@id/nombreTab"/>
+
+
+                <TextView
+                    android:id="@+id/apellidosTab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/adApellidos"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    android:layout_toRightOf="@id/imagenUsuario"
+                    android:layout_below="@+id/nombre"/>
+                <TextView
+                    android:id="@+id/apellidos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:textStyle="normal"
+                    android:layout_below="@+id/nombre"
+                    android:layout_toRightOf="@id/apellidosTab"/>
+
+
+                <TextView
+                    android:id="@+id/dniTab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/adDNI"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    android:layout_toRightOf="@id/imagenUsuario"
+                    android:layout_below="@+id/apellidos"/>
+                <TextView
+                    android:id="@+id/dni"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:textStyle="normal"
+                    android:layout_below="@+id/apellidos"
+                    android:layout_toRightOf="@id/dniTab"/>
+
+
+                <TextView
+                    android:id="@+id/emailTab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/adEmail"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    android:layout_toRightOf="@id/imagenUsuario"
+                    android:layout_below="@+id/dni"/>
+                <TextView
+                    android:id="@+id/email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:textStyle="normal"
+                    android:layout_below="@+id/dni"
+                    android:layout_toRightOf="@id/emailTab"/>
+
+
+                <TextView
+                    android:id="@+id/telefonoTab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/adTelefono"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    android:layout_toRightOf="@id/imagenUsuario"
+                    android:layout_below="@+id/email"/>
+                <TextView
+                    android:id="@+id/telefono"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:textStyle="normal"
+                    android:layout_below="@+id/email"
+                    android:layout_toRightOf="@id/telefonoTab"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_below="@id/telefono"
+                    android:layout_marginTop="30dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/mandarEmail"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@mipmap/ic_email_black_48dp"
+                        android:clickable="true"
+                        android:onClick="onClickEmail"
+                        android:tintMode="src_in"
+                        android:tint="@color/tintIcon"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="20dp"
+                        />
+
+                    <ImageView
+                        android:id="@+id/llamar"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@mipmap/ic_call_black_48dp"
+                        android:clickable="true"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="30dp"
+                        android:tintMode="src_in"
+                        android:tint="@color/tintIcon"
+                        android:onClick="onClickLlamar"
+                        />
+
+                </LinearLayout>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

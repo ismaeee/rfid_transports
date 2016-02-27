@@ -1,0 +1,223 @@
+<resources>
+    <string name="app_name">RFID Transportes</string>
+
+    <string name="log_out">Salir</string>
+    <string name="configuracion">Configuración</string>
+    <string name="about">Acerca de</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="salir">Salir</string>
+    <string name="si">Sí</string>
+    <string name="error">Error</string>
+    <string name="opciones">Opciones</string>
+    <string name="back">Volver</string>
+    <string name="update">Actualizar</string>
+
+
+
+
+    <!-- LOGIN LAYOUT -->
+
+        <!-- TaskLogin -->
+
+        <string name="bienvenida">Gestiona tus tarjetas</string>
+        <string name="user_email">Usuario o Email</string>
+        <string name="pass">Contraseña</string>
+        <string name="login">login</string>
+        <string name="registro">registro</string>
+        <string name="aun">Aún no tengo cuenta</string>
+        <string name="recuperar">Recuperar contraseña</string>
+        <string name="volverInicio">Volver a Login</string>
+
+
+
+    <!-- TaskRegistro -->
+        <string name="user">Usuario</string>
+        <string name="pass1">Contraseña</string>
+        <string name="pass2">Confirmar Contraseña</string>
+        <string name="dni">DNI</string>
+        <string name="nombre">Nombre</string>
+        <string name="apellidos">Apellidos</string>
+        <string name="email">Email</string>
+        <string name="telefono">Teléfono</string>
+        <string name="tipo">Tipo de usuario:</string>
+        <string name="registrar">Registrar</string>
+        <string name="yatengo">Ya tengo una cuenta</string>
+        <string name="admin">Administrador</string>
+
+
+
+    <!--  Menú   -->
+
+    <string name="action_settings">Settings</string>
+    <string name="logout">Logout</string>
+
+
+
+
+    <string name="sesion">Cerrar Sesión</string>
+    <string name="mensajeSesion">Error de sesión, ¿desea salir e iniciar sesión nuevamente?</string>
+    <string name ="tituloSesion">Cerrar Sesión</string>
+
+    <string name="defase">Desfase: </string>
+    <string name="alerta">Id:</string>
+    <string name="desfase">Desfase: </string>
+    <string name="enviar">Enviar</string>
+    <string name="datos"><u>Datos Alerta</u></string>
+    <string name="usuario"><u>Usuario</u></string>
+
+    <string name="adIdentificador">Identificador: </string>
+    <string name="adUID">UID: </string>
+    <string name="adSaldoDB">Saldo en el sistema: </string>
+    <string name="adSaldoCard">Saldo en la tarjeta: </string>
+    <string name="adFecha">Fecha: </string>
+    <string name="adUsername">UserName: </string>
+    <string name="adNombre">Nombre: </string>
+    <string name="adApellidos">Apellidos: </string>
+    <string name="adDNI">DNI: </string>
+    <string name="adEmail">Email: </string>
+    <string name="adTelefono">Teléfono: </string>
+
+
+    <string name="key_map">AIzaSyCI0kRqBjuFVF5l0Md-Yb9bMWfunp7QboA</string>
+
+
+    <string name="buscarTarjeta">buscar por UID</string>
+    <string name="buscarUsuario">buscar por UserName o DNI</string>
+
+    <string name="item1Drawer">Añadir Tarjeta</string>
+    <string name="item2Drawer">Tarjetas Bloqueadas</string>
+    <string name="item3Drawer">Solicitudes de Admin</string>
+
+
+    <string name="tarjetasBloqueadas">Tarjetas Bloqueadas</string>
+    <string name="solicitudesAdmin">Solicitudes Admin</string>
+    <string name="tarjeta">Tarjeta</string>
+
+
+    <string name="idTarjeta">Identificador: </string>
+    <string name="uidTarjeta">UID: </string>
+    <string name="saldoTarjeta">Saldo: </string>
+    <string name="fechaActualizacionTarjeta">Último uso: </string>
+    <string name="fechaCreacionTarjeta">Creación: </string>
+    <string name="usuarioTarjeta">Usuario:</string>
+
+
+    <string name="formUid">UID</string>
+    <string name="formDni">DNI de Usuario</string>
+    <string name="formSaldo">Saldo (euros)</string>
+
+    <string name="labelAlerta">Alerta</string>
+    <string name="transportes">TRANSPORTES</string>
+    <string name="ok">Ok</string>
+    <string name="fecha">Actualizado:</string>
+
+
+    <string name="aboutContent">Creado por: Ismael Santos Cabaña\nismael.santosca@alum.uca.es\n\nProfesor director del proyecto: Juan Boubeta Puig\njuan.boubeta@uca.es\n\nUniversidad de Cádiz\nEscuela Superior de Ingeniería\n2015 - 2016</string>
+
+
+    <string name="TaskErrorServer">Error en servidor</string>
+
+    <!-- TaskBloquearTarjeta-->
+    <string name="TaskBloquearTarjetaOk">Tarjeta Bloqueada correctamente</string>
+    <string name="TaskBloquearTarjetaError">Error al bloquear tarjeta</string>
+    <string name="TaskBloquearTarjetaUnique">Esta tarjeta ya está bloqueada</string>
+
+    <!-- TaskDescartarTarjeta-->
+    <string name="TaskDescartarTarjetaOk">Alerta descartada</string>
+    <string name="TaskDescartarTarjetaError">Error al descartar alerta</string>
+
+    <!-- TaskEnviarEmail-->
+    <string name="TaskEnviarEmailOk">Email enviado correctamente</string>
+    <string name="TaskEnviarEmailError">Error al enviar email</string>
+
+    <!-- TaskLogin-->
+    <string name="TaskLoginPassword">Contraseña incorrecta</string>
+    <string name="TaskLoginErrorConexion">Problema en la conexión</string>
+
+    <!-- TaskRegistro-->
+    <string name="TaskRegistroUser">Ya existe un usuario con este User</string>
+    <string name="TaskRegistroDNI">Ya existe un usuario con este DNI</string>
+    <string name="TaskRegistroEmail">Ya existe un usuario con este Email</string>
+
+    <!-- AlertaActivity -->
+    <string name="seguroBloquear">¿Estás seguro de querer bloquear esta tarjeta?</string>
+    <string name="bloquearTarjeta">Bloquear Tarjeta</string>
+    <string name="noLocalizacion">No se tiene localización de la alerta</string>
+    <string name="siDescarta">Si descarta la alerta se entenderá que ya se ha finalizado con ella, ¿Desea realizar la operación?</string>
+    <string name="descartarAlerta">Descartar Alerta</string>
+    <string name="llamar">LLamar al usuario</string>
+    <string name="quieresenviar">¿Desea notificar al usuario por email?</string>
+    <string name="notifyEmail">Notificar por Email</string>
+
+    <string name="nobloqueadas">No hay ninguna tarjeta bloqueada</string>
+    <string name="desbloqueada">Tarjeta desbloqueada</string>
+    <string name="noAlertas">No hay alertas</string>
+
+    <string name="eliminado">Eliminado</string>
+    <string name="noEliminado">Error al eliminar</string>
+    <string name="errorSesion">Error de sesión</string>
+
+    <string name="busqueda">Búsqueda</string>
+
+    <string name="eliminarTarjeta">Eliminar tarjeta</string>
+    <string name="seguroTarjeta">¿Estás seguro de querer eliminar esta tarjeta?, se eliminarían las alertas asociadas a ella.</string>
+
+    <string name="eliminarUsuarioOp">Eliminar Usuario</string>
+    <string name="cambiarRolOp">Cambiar Rol</string>
+    <string name="eliminarTarjetaOp">Eliminar Tarjeta</string>
+    <string name="bloquearTarjetaOp">Bloquear Tarjeta</string>
+
+    <string name="simismo">No puede eliminarse a si mismo</string>
+    <string name="seguroEliminar">¿Estás seguro de querer eliminar este usuario?</string>
+    <string name="simismoRol">No puedes cambiar el rol a si mismo</string>
+    <string name="seguroRolAdmin">¿Estás seguro de querer cambiar su rol a Admin?</string>
+    <string name="seguroRolUser">¿Estás seguro de querer cambiar su rol a User?</string>
+
+    <string name="soloSuperAdmin">Solo el SuperAdmin puede borrar a otro Admin</string>
+
+    <string name="rolCambiado">Rol cambiado</string>
+    <string name="errorCambiarRol">Error al cambiar rol</string>
+
+    <string name="revisaDatos">Revisa los datos introducidos</string>
+    <string name="campoObligatorio">Campo obligatorio</string>
+    <string name="passCorta">Contraseña demasiado corta</string>
+    <string name="passNoCoincide">No coinciden las contraseñas</string>
+    <string name="emailIncorrecto">Email incorrecto</string>
+    <string name="dniIncorrecto">DNI incorrecto</string>
+    <string name="peticionAceptadaEmail">Petición aceptada, mire su correo</string>
+    <string name="noExisteEmail">No existe ningún usuario con ese email</string>
+
+    <string name="presiona">Presiona para actualizar</string>
+    <string name="noTarjetas">No se encuentran tarjetas...</string>
+
+    <string name="cargandoDatos">Cargando datos...</string>
+    <string name="malUid">UID tiene que tener 8 digitos</string>
+
+    <string name="addCard">Añadir Tarjeta</string>
+    <string name="addCardOk">Tarjeta Añadida</string>
+    <string name="UIDDuplicado">UID duplicado</string>
+    <string name="caducado">Enlace caducado</string>
+
+    <string name="queDesea">¿Qué desea hacer?</string>
+    <string name="aceptar">Aceptar</string>
+    <string name="solicitudAdmin">Solicitud de Administrador</string>
+    <string name="descartar">Descartar</string>
+    <string name="solicitudAceptada">Solicitud Aceptada</string>
+    <string name="solicitudDescartada">Solicitud Descartada</string>
+    <string name="noSolicitudes">No hay ninguna solicitud pendiente</string>
+    <string name="noUserData">No hay datos de usuario</string>
+
+
+    <string name="navUsername">UserName</string>
+    <string name="navEmail">email@email.com</string>
+    <string name="navNombreCompleto">Nombre Completo</string>
+
+    <string name="menuSearchUser">Buscar</string>
+
+    <string name="seguroDesbloquear">¿Estás seguro de querer desbloquear esta tarjeta?</string>
+    <string name="desbloquear">Desbloquear</string>
+    <string name="desbloquearTarjeta">Desbloquear tarjeta</string>
+
+
+
+</resources>

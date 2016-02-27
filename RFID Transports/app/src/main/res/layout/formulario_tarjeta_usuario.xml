@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/toolbar" />
+
+    <fr.castorflex.android.smoothprogressbar.SmoothProgressBar
+        android:id="@+id/smoothProgressBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="0dp"
+        android:indeterminate="true"
+        android:minHeight="4dp" />
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="25dp"
+        android:background="@color/white"
+        android:elevation="1sp"
+        android:orientation="vertical"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tintMode="src_in"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:tint="@color/holo_red_dark"
+            android:src="@mipmap/ic_tarjeta"/>
+
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical" android:layout_width="match_parent"
+            android:layout_margin="15dp"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:layout_height="match_parent">
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="25dp"
+                android:textColor="@color/blue_grey_500"
+                android:text="@string/formUid"/>
+            <EditText
+                android:id="@+id/uid"
+                android:layout_width="match_parent"
+                android:textSize="15sp"
+                android:ems="10"
+                android:textColor="@color/blue_grey_500"
+                android:maxLength="8"
+                android:digits="0123456789abcdef"
+                android:drawableRight="@mipmap/ic_card_gris"
+                android:drawablePadding="10dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:paddingTop="0dp"
+                android:imeOptions="actionSend"
+                android:singleLine="true"/>
+
+
+            <TextView
+                android:id="@+id/enviar"
+                android:textSize="20sp"
+                android:text="@string/enviar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="5dp"
+                android:textStyle="bold"
+                android:textColor="@color/green"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

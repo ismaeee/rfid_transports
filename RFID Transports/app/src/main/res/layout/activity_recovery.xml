@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/holo_red_dark">
+
+
+
+    <ImageView
+        android:id="@+id/iconApp"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:src="@mipmap/logo_inverso_dif"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        android:layout_below="@id/iconApp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="0dp"
+            android:visibility="visible">
+            <TextView
+                style="@style/MyEditTextstyle"
+                android:layout_marginBottom="25dp"
+                android:layout_width="match_parent"
+                android:textSize="23sp"
+                android:ems="10"
+                android:textColorLink="@color/white"
+                android:text="@string/recuperar"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:gravity="center_horizontal"
+                android:textAllCaps="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/pass1"
+                style="@style/MyEditTextstyle"
+                android:layout_marginBottom="5dp"
+                android:layout_width="match_parent"
+                android:textSize="20sp"
+                android:textColorHint="@color/white"
+                android:ems="10"
+                android:inputType="textPassword"
+                android:drawablePadding="10dp"
+                android:drawableLeft="@mipmap/ic_lock_white_24dp"
+                android:textColorLink="@color/white"
+                android:hint="@string/pass1"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionNext"
+                android:singleLine="true"/>
+
+            <EditText
+                android:id="@+id/pass2"
+                style="@style/MyEditTextstyle"
+                android:layout_width="match_parent"
+                android:textSize="20sp"
+                android:textColorHint="@color/white"
+                android:ems="10"
+                android:inputType="textPassword"
+                android:drawablePadding="10dp"
+                android:drawableLeft="@mipmap/ic_lock_white_24dp"
+                android:textColorHighlight="@color/white"
+                android:hint="@string/pass2"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionSend"
+                android:singleLine="true"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/enviar"
+                android:textAllCaps="true"
+                android:layout_gravity="right"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="70dp"
+                android:gravity="right"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:onClick="enviaPass"
+                android:clickable="true"
+                android:layout_marginLeft="30dp"
+                android:textColor="@color/white"/>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

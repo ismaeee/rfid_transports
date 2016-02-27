@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:elevation="1sp"
+            android:orientation="vertical"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="40dp"
+                >
+
+                <ImageView
+                    android:id="@+id/imagenAlerta"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/ic_error_black_48dp"
+                    android:tint="@color/holo_orange_light"
+                    android:tintMode="src_in" />
+
+                <TextView
+                    android:id="@+id/idTab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/adIdentificador"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    android:layout_toRightOf="@id/imagenAlerta"
+                    />
+                <TextView
+                    android:id="@+id/id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:layout_toRightOf="@id/idTab"
+                    />
+
+                <TextView
+                    android:id="@+id/uidTab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/adUID"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    android:layout_toRightOf="@id/imagenAlerta"
+                    android:layout_below="@+id/id"
+                    />
+                <TextView
+                    android:id="@+id/uid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:layout_below="@id/id"
+                    android:layout_toRightOf="@id/uidTab"/>
+                <TextView
+                    android:id="@+id/saldoDBTab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/adSaldoDB"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    android:layout_below="@id/uid"
+                    android:layout_toRightOf="@id/imagenAlerta"
+                    />
+                <TextView
+                    android:id="@+id/saldoDB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:layout_below="@id/uid"
+                    android:layout_toRightOf="@id/saldoDBTab"
+
+                    />
+
+                <TextView
+                    android:id="@+id/saldoCardTab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/adSaldoCard"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    android:layout_toRightOf="@id/imagenAlerta"
+                    android:layout_below="@+id/saldoDB"/>
+                <TextView
+                    android:id="@+id/saldoCard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:layout_below="@+id/saldoDB"
+                    android:layout_toRightOf="@id/saldoCardTab"/>
+
+                <TextView
+                    android:id="@+id/fechaTab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/adFecha"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    android:layout_toRightOf="@id/imagenAlerta"
+                    android:layout_below="@+id/saldoCard"/>
+                <TextView
+                    android:id="@+id/fecha"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:layout_below="@+id/saldoCard"
+                    android:layout_toRightOf="@id/fechaTab"/>
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+
+</LinearLayout>

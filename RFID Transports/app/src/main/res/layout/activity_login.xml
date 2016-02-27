@@ -1,0 +1,556 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/holo_red_dark">
+
+
+    <ImageView
+        android:id="@+id/iconApp"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:src="@mipmap/logo_inverso_dif"/>
+
+
+    <LinearLayout
+        android:id="@+id/seleccion"
+        android:layout_below="@id/iconApp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:visibility="visible"
+        android:layout_marginRight="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/login"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:onClick="onClickLogin"
+            android:clickable="true"
+
+            android:textColor="@color/white"/>
+
+        <View
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="2dp"
+            android:background="@drawable/separadorgris"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/registro"
+            android:layout_gravity="right"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:onClick="onClickRegistro"
+            android:textColor="@color/blue_grey_500"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/loginLayout"
+        android:visibility="invisible"
+        android:layout_below="@id/iconApp">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="0dp"
+            android:visibility="visible">
+
+            <EditText
+                android:id="@+id/user"
+                style="@style/MyEditTextstyle"
+                android:layout_marginBottom="5dp"
+                android:layout_width="match_parent"
+                android:textSize="25sp"
+                android:textColorHint="@color/white"
+                android:ems="10"
+                android:drawablePadding="10dp"
+                android:drawableLeft="@mipmap/ic_account_box_white_24dp"
+                android:textColorLink="@color/white"
+                android:hint="@string/user_email"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+                />
+
+            <EditText
+                android:id="@+id/pass"
+                style="@style/MyEditTextstyle"
+                android:layout_width="match_parent"
+                android:textSize="25sp"
+                android:textColorHint="@color/white"
+                android:ems="10"
+                android:inputType="textPassword"
+                android:drawablePadding="10dp"
+                android:drawableLeft="@mipmap/ic_lock_white_24dp"
+                android:textColorHighlight="@color/white"
+                android:hint="@string/pass"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionSend"
+                android:singleLine="true"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/login"
+                android:textAllCaps="true"
+                android:layout_gravity="right"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="70dp"
+                android:gravity="right"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:onClick="enviaLogin"
+                android:clickable="true"
+                android:layout_marginLeft="30dp"
+                android:textColor="@color/white"/>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/recuperar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/recuperar"
+            android:textAllCaps="false"
+            android:textStyle="normal"
+            android:textSize="20sp"
+            android:onClick="onClickRecuperar"
+            android:clickable="true"
+            android:textColor="@color/white"
+            android:gravity="center_horizontal"
+            android:layout_above="@+id/vista"/>
+        <View
+            android:id="@+id/vista"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="2dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/separadorgris"
+            android:layout_above="@+id/cambio"
+
+            />
+        <TextView
+            android:id="@+id/cambio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/aun"
+            android:textAllCaps="false"
+            android:textStyle="normal"
+            android:textSize="20sp"
+            android:onClick="onClickRegistro"
+            android:clickable="true"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/white"
+            android:layout_alignParentBottom="true"
+            />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recuperarLayout"
+        android:visibility="invisible"
+        android:layout_below="@id/iconApp">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="0dp"
+            android:visibility="visible">
+            <TextView
+                style="@style/MyEditTextstyle"
+                android:layout_marginBottom="25dp"
+                android:layout_width="match_parent"
+                android:textSize="23sp"
+                android:ems="10"
+                android:textColorLink="@color/white"
+                android:text="@string/recuperar"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                android:layout_gravity="center"
+                android:gravity="center_horizontal"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/emailRecuperar"
+                style="@style/MyEditTextstyle"
+                android:layout_marginBottom="5dp"
+                android:layout_width="match_parent"
+                android:textSize="20sp"
+                android:textColorHint="@color/white"
+                android:ems="10"
+                android:drawablePadding="10dp"
+                android:drawableLeft="@mipmap/ic_email_white_24dp"
+                android:textColorLink="@color/white"
+                android:hint="@string/email"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionSend"
+                android:singleLine="true"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/enviar"
+                android:textAllCaps="true"
+                android:layout_gravity="right"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="70dp"
+                android:gravity="right"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:onClick="enviaRecuperar"
+                android:clickable="true"
+                android:layout_marginLeft="30dp"
+                android:textColor="@color/white"/>
+
+
+        </LinearLayout>
+
+
+        <View
+            android:id="@+id/vista3"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="2dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/separadorgris"
+            android:layout_above="@+id/cambio3"
+
+            />
+        <TextView
+            android:id="@+id/cambio3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/volverInicio"
+            android:textAllCaps="false"
+            android:textStyle="normal"
+            android:textSize="20sp"
+            android:onClick="onClickLogin"
+            android:clickable="true"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/white"
+            android:layout_alignParentBottom="true"
+            />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/registroLayout"
+        android:visibility="invisible"
+        android:layout_below="@id/iconApp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/scrollView"
+            >
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="0dp"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="10dp"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="33dp"
+                        android:layout_marginRight="33dp"
+                        android:text="@string/tipo"
+                        android:textSize="15sp"
+                        android:textColor="@color/white"/>
+
+                    <RadioGroup
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/myRadioGroup"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="33dp"
+                        android:layout_marginRight="33dp"
+                        android:checkedButton="@+id/rUser" >
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/rUser"
+                            android:textColor="@color/white"
+                            android:text="@string/user" />
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/rAdmin"
+                            android:textColor="@color/white"
+                            android:text="@string/admin" />
+
+
+                    </RadioGroup>
+
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/user2"
+                    style="@style/MyEditTextstyle2"
+                    android:layout_marginBottom="5dp"
+                    android:layout_width="match_parent"
+                    android:textSize="15sp"
+                    android:textColorHint="@color/white"
+                    android:ems="10"
+                    android:textColorLink="@color/white"
+                    android:hint="@string/user"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionNext"
+                    android:drawablePadding="5dp"
+                    android:drawableRight="@mipmap/ic_account_box_white_24dp"
+                    android:singleLine="true"/>
+
+                <EditText
+                    android:id="@+id/pass1"
+                    style="@style/MyEditTextstyle2"
+                    android:layout_marginBottom="5dp"
+                    android:layout_width="match_parent"
+                    android:textSize="15sp"
+                    android:textColorHint="@color/white"
+                    android:ems="10"
+                    android:textColorLink="@color/white"
+                    android:hint="@string/pass1"
+                    android:inputType="textPassword"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="5dp"
+                    android:drawableRight="@mipmap/ic_lock_white_24dp"
+                    android:imeOptions="actionNext"
+                    android:singleLine="true"/>
+
+                <EditText
+                    android:id="@+id/pass2"
+                    style="@style/MyEditTextstyle2"
+                    android:layout_marginBottom="5dp"
+                    android:layout_width="match_parent"
+                    android:textSize="15sp"
+                    android:textColorHint="@color/white"
+                    android:ems="10"
+                    android:textColorLink="@color/white"
+                    android:hint="@string/pass2"
+                    android:inputType="textPassword"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="5dp"
+                    android:drawableRight="@mipmap/ic_lock_white_24dp"
+                    android:imeOptions="actionNext"
+                    android:singleLine="true"/>
+
+
+                <EditText
+                    android:id="@+id/dni"
+                    style="@style/MyEditTextstyle2"
+                    android:layout_marginBottom="5dp"
+                    android:layout_width="match_parent"
+                    android:textSize="15sp"
+                    android:textColorHint="@color/white"
+                    android:ems="10"
+                    android:textColorLink="@color/white"
+                    android:hint="@string/dni"
+                    android:inputType="number"
+                    android:maxLength="9"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="5dp"
+                    android:drawableRight="@mipmap/ic_dni_24dp"
+                    android:imeOptions="actionNext"
+                    android:singleLine="true"/>
+
+                <EditText
+                    android:id="@+id/nombre"
+                    style="@style/MyEditTextstyle2"
+                    android:layout_marginBottom="5dp"
+                    android:layout_width="match_parent"
+                    android:textSize="15sp"
+                    android:textColorHint="@color/white"
+                    android:ems="10"
+                    android:textColorLink="@color/white"
+                    android:hint="@string/nombre"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="5dp"
+                    android:drawableRight="@mipmap/ic_short_text_white_24dp"
+                    android:imeOptions="actionNext"
+                    android:singleLine="true"/>
+
+
+                <EditText
+                    android:id="@+id/apellidos"
+                    style="@style/MyEditTextstyle2"
+                    android:layout_marginBottom="5dp"
+                    android:layout_width="match_parent"
+                    android:textSize="15sp"
+                    android:textColorHint="@color/white"
+                    android:ems="10"
+                    android:textColorLink="@color/white"
+                    android:hint="@string/apellidos"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="5dp"
+                    android:drawableRight="@mipmap/ic_short_text_white_24dp"
+                    android:imeOptions="actionNext"
+                    android:singleLine="true"/>
+
+
+
+                <EditText
+                    android:id="@+id/email"
+                    style="@style/MyEditTextstyle2"
+                    android:layout_marginBottom="5dp"
+                    android:layout_width="match_parent"
+                    android:textSize="15sp"
+                    android:textColorHint="@color/white"
+                    android:ems="10"
+                    android:textColorLink="@color/white"
+                    android:hint="@string/email"
+                    android:inputType="textEmailAddress"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="5dp"
+                    android:drawableRight="@mipmap/ic_email"
+                    android:imeOptions="actionNext"
+                    android:singleLine="true"/>
+
+                <EditText
+                    android:id="@+id/telefono"
+                    style="@style/MyEditTextstyle2"
+                    android:layout_marginBottom="5dp"
+                    android:layout_width="match_parent"
+                    android:textSize="15sp"
+                    android:textColorHint="@color/white"
+                    android:ems="10"
+                    android:textColorLink="@color/white"
+                    android:hint="@string/telefono"
+                    android:inputType="number"
+                    android:maxLength="13"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="5dp"
+                    android:drawableRight="@mipmap/ic_phone_android_white_24dp"
+                    android:imeOptions="actionSend"
+                    android:singleLine="true"/>
+
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/registro"
+                    android:textAllCaps="true"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="70dp"
+                    android:gravity="right"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:onClick="enviaRegistro"
+                    android:clickable="true"
+                    android:layout_marginLeft="30dp"
+                    android:textColor="@color/white"/>
+
+                <View
+                    android:id="@+id/vista2"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="2dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/separadorgris"
+                    android:layout_below="@+id/scrollView"
+
+                    />
+                <TextView
+                    android:id="@+id/cambio2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/yatengo"
+                    android:textAllCaps="false"
+                    android:textStyle="normal"
+                    android:textSize="20sp"
+                    android:onClick="onClickLogin"
+                    android:clickable="true"
+                    android:gravity="center_horizontal"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="@color/white"
+                    android:layout_below="@+id/vista2"
+
+                    />
+
+            </LinearLayout>
+
+
+
+
+        </ScrollView>
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

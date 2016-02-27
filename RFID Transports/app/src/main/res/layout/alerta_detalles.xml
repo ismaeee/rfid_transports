@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <fr.castorflex.android.smoothprogressbar.SmoothProgressBar
+        android:id="@+id/smoothProgressBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:layout_marginTop="0dp"
+        android:minHeight="4dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        />
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/datos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:clickable="true"
+                    android:onClick="onClickDatos"
+                    android:text="@string/datos"
+                    android:textAllCaps="true"
+                    android:textSize="30dp"
+                    android:textStyle="normal" />
+
+
+                <LinearLayout
+                    android:id="@+id/lyDatos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/datos"
+                    android:layout_marginLeft="20dp"
+                    android:orientation="horizontal"
+                    android:visibility="invisible">
+
+                    <View
+                        android:id="@+id/vista"
+                        android:layout_width="2dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/separadorgris"
+
+                        />
+
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <TextView
+                            android:id="@+id/idTab"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/adIdentificador"
+                            android:textSize="15dp"
+                            android:textStyle="bold"
+                            android:layout_alignParentTop="true"/>
+                        <TextView
+                            android:id="@+id/id"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_toRightOf="@id/idTab"
+                            />
+
+                        <TextView
+                            android:id="@+id/uidTab"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/adUID"
+                            android:textSize="15dp"
+                            android:textStyle="bold"
+                            android:layout_below="@+id/idTab"
+                            />
+                        <TextView
+                            android:id="@+id/uid"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15dp"
+                            android:layout_below="@id/idTab"
+                            android:layout_toRightOf="@id/uidTab"/>
+
+                        <TextView
+                            android:id="@+id/saldoDBTab"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/adSaldoDB"
+                            android:textSize="15dp"
+                            android:textStyle="bold"
+                            android:layout_below="@id/uidTab"
+                            />
+                        <TextView
+                            android:id="@+id/saldoDB"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15dp"
+                            android:layout_below="@id/uidTab"
+                            android:layout_toRightOf="@id/saldoDBTab"
+                            />
+
+                        <TextView
+                            android:id="@+id/saldoCardTab"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/adSaldoCard"
+                            android:textSize="15dp"
+                            android:textStyle="bold"
+                            android:layout_below="@+id/saldoDB"/>
+                        <TextView
+                            android:id="@+id/saldoCard"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15dp"
+                            android:layout_below="@+id/saldoDB"
+                            android:layout_toRightOf="@id/saldoCardTab"/>
+
+                        <TextView
+                            android:id="@+id/fechaTab"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/adFecha"
+                            android:textSize="15dp"
+                            android:textStyle="bold"
+                            android:layout_below="@+id/saldoCard"/>
+                        <TextView
+                            android:id="@+id/fecha"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15dp"
+                            android:layout_below="@+id/saldoCard"
+                            android:layout_toRightOf="@id/fechaTab"/>
+
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/botonesAlerta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/datos"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:visibility="visible">
+
+                    <ImageView
+                        android:id="@+id/descartar"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="40dp"
+
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@mipmap/papelera"
+                        android:clickable="true"
+                        android:onClick="onClickDescartar"
+                        />
+
+
+                    <ImageView
+                        android:id="@+id/blockCard"
+                        android:layout_marginRight="40dp"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@mipmap/ic_card_block_red_48dp"
+                        android:clickable="true"
+                        android:onClick="onClickBloquear"
+                        />
+
+                    <ImageView
+                        android:id="@+id/localizacion"
+                        android:layout_marginRight="20dp"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@mipmap/ic_place_black_48dp"
+                        android:tintMode="src_atop"
+                        android:tint="@color/green"
+                        android:clickable="true"
+                        android:onClick="onClickLocalizar"
+                        />
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/usuario"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:clickable="true"
+                    android:onClick="onClickUsuario"
+                    android:text="@string/usuario"
+                    android:textAllCaps="true"
+                    android:textSize="30dp"
+                    android:textStyle="normal" />
+
+
+                <LinearLayout
+                    android:id="@+id/lyUsuario"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/usuario"
+                    android:layout_marginLeft="20dp"
+                    android:orientation="horizontal"
+                    android:visibility="invisible">
+
+                    <View
+                        android:id="@+id/vista2"
+                        android:layout_width="2dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/separadorgris"
+
+                        />
+
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <TextView
+                            android:id="@+id/idUsuarioTab"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/adIdentificador"
+                            android:textSize="15dp"
+                            android:textStyle="bold"
+                            android:layout_alignParentTop="true"/>
+
+                        <TextView
+                            android:id="@+id/idUsuario"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15dp"
+                            android:textStyle="normal"
+                            android:layout_alignParentTop="true"
+                            android:layout_toRightOf="@id/idUsuarioTab"
+                            />
+
+
+                        <TextView
+                            android:id="@+id/userTab"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/adUsername"
+                            android:textSize="15dp"
+                            android:textStyle="bold"
+                            android:layout_below="@+id/idUsuarioTab"/>
+                        <TextView
+                            android:id="@+id/user"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15dp"
+                            android:textStyle="normal"
+                            android:layout_below="@+id/idUsuarioTab"
+                            android:layout_toRightOf="@id/userTab"/>
+
+
+                        <TextView
+                            android:id="@+id/nombreTab"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/adNombre"
+                            android:textSize="15dp"
+                            android:textStyle="bold"
+                            android:layout_below="@+id/userTab"/>
+                        <TextView
+                            android:id="@+id/nombre"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15dp"
+                            android:textStyle="normal"
+                            android:layout_below="@+id/userTab"
+                            android:layout_toRightOf="@id/nombreTab"/>
+
+
+                        <TextView
+                            android:id="@+id/apellidosTab"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/adApellidos"
+                            android:textSize="15dp"
+                            android:textStyle="bold"
+                            android:layout_below="@+id/nombreTab"/>
+                        <TextView
+                            android:id="@+id/apellidos"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15dp"
+                            android:textStyle="normal"
+                            android:layout_below="@+id/nombreTab"
+                            android:layout_toRightOf="@id/apellidosTab"/>
+
+
+                        <TextView
+                            android:id="@+id/dniTab"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/adDNI"
+                            android:textSize="15dp"
+                            android:textStyle="bold"
+                            android:layout_below="@+id/apellidosTab"/>
+                        <TextView
+                            android:id="@+id/dni"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15dp"
+                            android:textStyle="normal"
+                            android:layout_below="@+id/apellidosTab"
+                            android:layout_toRightOf="@id/dniTab"/>
+
+
+                        <TextView
+                            android:id="@+id/emailTab"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/adEmail"
+                            android:textSize="15dp"
+                            android:textStyle="bold"
+                            android:layout_below="@+id/dniTab"/>
+                        <TextView
+                            android:id="@+id/email"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15dp"
+                            android:textStyle="normal"
+                            android:layout_below="@+id/dniTab"
+                            android:layout_toRightOf="@id/emailTab"/>
+
+
+                        <TextView
+                            android:id="@+id/telefonoTab"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/adTelefono"
+                            android:textSize="15dp"
+                            android:textStyle="bold"
+                            android:layout_below="@+id/emailTab"/>
+                        <TextView
+                            android:id="@+id/telefono"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15dp"
+                            android:textStyle="normal"
+                            android:layout_below="@+id/emailTab"
+                            android:layout_toRightOf="@id/telefonoTab"/>
+
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/botonesUsuario"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/usuario"
+                    android:layout_marginBottom="100dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+                    <ImageView
+                        android:id="@+id/mandarEmail"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@mipmap/ic_email_black_48dp"
+                        android:tintMode="src_atop"
+                        android:tint="@color/holo_blue_bright"
+                        android:clickable="true"
+                        android:onClick="onClickEmail"
+                        />
+                    <ImageView
+                        android:id="@+id/llamar"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="50dp"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@mipmap/ic_call_black_48dp"
+                        android:tintMode="src_atop"
+                        android:tint="@color/holo_blue_bright"
+                        android:clickable="true"
+                        android:onClick="onClickLlamar"
+                        />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

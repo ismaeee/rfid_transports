@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="orange" type="color">#FF8000</item>
+    <item name="darkOrange" type="color">#B45F04</item>
+    <item name="White" type="color">#FFFFFF</item>
+    <item name="facebook" type="color">#3a5795</item>
+    <item name="darkFacebook" type="color">#21314f</item>
+
+
+    <!-- PRUEBAS -->
+
+    <color name="view_bg">#b20e0f</color>
+    <color name="white">#ffffff</color>
+    <color name="btn_bg">#3e4a56</color>
+
+
+    <color name="blue_grey_500">#607D8B</color>
+    <color name="blue_grey_600">#546E7A</color>
+    <color name="blue_grey_700">#455A64</color>
+    <color name="blue_grey_800">#37474F</color>
+    <color name="blue_grey_900">#263238</color>
+
+
+    <color name="blue_grey_700_transp">#AA455A64</color>
+
+    <color name="gris_transparente">#44607D8B</color>
+
+    <color name="enviado">#E6E6E6</color>
+
+    <color name="gold">#e6c200</color>
+    <color name="gold2">#8a7400</color>
+
+    <color name="black">#000000</color>
+    <color name="bg_gradient_start">#3990CA</color>
+    <color name="bg_gradient_end">#15547E</color>
+    <color name="bg_button_login">#1D394C</color>
+
+    <item name="FloatingActionButton" type="color">#3a5795</item>
+
+
+    <color name="window_background">#CC000000</color>
+
+
+    <color name="my_primary">#ED1C24</color>
+    <color name="my_primary_dark">#CC0000</color>
+    <color name="my_primary_light">#B3E5FC</color>
+    <color name="my_accent">#FF5722</color>
+    <color name="my_primary_text">#ffffff</color>
+    <color name="my_secondary_text">#ffffff</color>
+    <color name="my_icons">#FFFFFF</color>
+    <color name="my_divider">#B6B6B6</color>
+
+
+
+    <color name="gplus_color_1">#3e802f</color>
+    <color name="gplus_color_2">#f4b400</color>
+    <color name="gplus_color_3">#427fed</color>
+    <color name="gplus_color_4">#b23424</color>
+
+    <color name="holo_blue_dark">#0099cc</color>
+    <color name="holo_yellow_dark">#ff8800</color>
+    <color name="holo_green_dark">#669900</color>
+    <color name="holo_purple_dark">#9933cc</color>
+        <color name="holo_red_dark">#cc0000</color>
+    <color name="red_dark">#990000</color>
+    <color name="red_transparente">#eeFF9999</color>
+
+    <color name="red">#ff0000</color>
+    <color name="normal_red">#E62117</color>
+
+    <color name="gris">#bfbfbf</color>
+
+    <color name="dark_green">#004d00</color>
+    <color name="green">#008000</color>
+
+    <color name="dark_orange">#e59400</color>
+    <color name="normal_orange">#ffa500</color>
+
+
+    <integer-array name="conjunto_holo">
+        <item>@color/holo_red_light</item>
+        <item>@color/holo_orange_light</item>
+        <item>@color/holo_green_light</item>
+        <item>@color/holo_blue_bright</item>
+    </integer-array>
+
+    <integer-array name="conjunto_holo_normal">
+        <item>@color/holo_blue_bright</item>
+        <item>@color/holo_green_light</item>
+        <item>@color/holo_orange_light</item>
+        <item>@color/holo_red_light</item>
+    </integer-array>
+
+
+    <color name="holo_red_light">#ffff4444</color>
+    <color name="holo_orange_light">#ffffbb33</color>
+    <color name="holo_green_light">#ff99cc00</color>
+    <color name="holo_blue_bright">#ff00ddff</color>
+
+
+    <color name="linkedin1">#0596CC</color>
+
+    <color name="linkedin2">#085986</color>
+    <color name="linkedin3">#076394</color>
+    <color name="linkedin4">#0573A4</color>
+    <color name="linkedin5">#094C78</color>
+
+
+    <integer-array name="azules_linkedin">
+        <item>@color/linkedin2</item>
+        <item>@color/linkedin3</item>
+        <item>@color/linkedin4</item>
+
+    </integer-array>
+
+        
+    <color name="tabsScrollColor">#8a140e</color>
+
+
+    <integer-array name="azules_linkedin2">
+        <item>@color/linkedin1</item>
+        <item>@color/linkedin4</item>
+    </integer-array>
+
+
+    <!-- Pruebas -->
+    <color name="secondary">#ff752c5e</color>
+    <color name="secondaryDark">#ff611c4b</color>
+    <color name="primary">#ff15a89c</color>
+    <color name="primaryDark">#ff147165</color>
+    <color name="ternary">#ff3b3b3a</color>
+    <color name="accent">#ffe3b008</color>
+
+    <color name="primaryText">#de000000</color>
+    <color name="secondaryText">#8a000000</color>
+
+    <color name="drawer_header_bg">@color/secondary</color>
+    <color name="drawer_item_text_default">#747474</color>
+    <color name="drawer_item_text_checked">@color/holo_red_light</color>
+
+
+
+    <integer-array name="rojoRFID">
+        <item>@color/red</item>
+        <item>@color/white</item>
+    </integer-array>
+
+    <color name="tintIcon">#cc999999</color>
+
+
+    <color name="user">#1A83B8</color>
+    <color name="superadmin">#B89B00</color>
+    <color name="admin">#CC0000</color>
+</resources>

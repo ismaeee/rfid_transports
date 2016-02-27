@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dp"
+    android:background="@color/white"
+    android:paddingBottom="10dp">
+
+    <ImageView
+        android:id="@+id/imagenTarjeta"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="10dp"
+        android:src="@mipmap/tarjeta_red_mini" />
+
+
+    <TextView
+        android:id="@+id/idTarjetaTab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/idTarjeta"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        android:layout_toRightOf="@id/imagenTarjeta"/>
+
+    <TextView
+        android:id="@+id/idTarjeta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14dp"
+        android:textStyle="normal"
+        android:layout_toRightOf="@id/idTarjetaTab"
+        />
+
+
+    <TextView
+        android:id="@+id/uidTab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/uidTarjeta"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        android:layout_toRightOf="@id/imagenTarjeta"
+        android:layout_below="@+id/idTarjeta"/>
+    <TextView
+        android:id="@+id/uid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14dp"
+        android:textStyle="normal"
+        android:layout_below="@+id/idTarjeta"
+        android:layout_toRightOf="@id/uidTab"/>
+
+
+    <TextView
+        android:id="@+id/saldoTab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/saldoTarjeta"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        android:layout_toRightOf="@id/imagenTarjeta"
+        android:layout_below="@+id/uid"/>
+    <TextView
+        android:id="@+id/saldo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14dp"
+        android:textStyle="normal"
+        android:layout_below="@+id/uid"
+        android:layout_toRightOf="@id/saldoTab"/>
+
+
+    <TextView
+        android:id="@+id/fechaActualizacionTab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fechaActualizacionTarjeta"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        android:layout_toRightOf="@id/imagenTarjeta"
+        android:layout_below="@+id/saldo"/>
+    <TextView
+        android:id="@+id/fechaActualizacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14dp"
+        android:textStyle="normal"
+        android:layout_below="@+id/saldo"
+        android:layout_toRightOf="@id/fechaActualizacionTab"/>
+
+
+    <TextView
+        android:id="@+id/fechaCreacionTab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fechaCreacionTarjeta"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        android:layout_toRightOf="@id/imagenTarjeta"
+        android:layout_below="@+id/fechaActualizacion"/>
+    <TextView
+        android:id="@+id/fechaCreacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14dp"
+        android:textStyle="normal"
+        android:layout_below="@+id/fechaActualizacion"
+        android:layout_toRightOf="@id/fechaCreacionTab"/>
+
+
+    </RelativeLayout>
