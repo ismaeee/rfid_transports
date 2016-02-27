@@ -4,13 +4,13 @@ Aplicación de gestión de alertas para pagos seguros mediante tarjetas Mifare C
 
 
 ## Logotipo de la aplicación:
-<img src="https://github.com/ismaeee/rfid_transports/blob/master/capturas%20de%20pantalla/logo_inverso_dif.png" alt="Logo" width="250"/>
+<img src="https://github.com/ismaeee/rfid_transports/blob/master/capturas%20de%20pantalla/logo_inverso_dif.png" alt="Logo" width="150"/> Logo principal
 
-<img src="https://github.com/ismaeee/rfid_transports/blob/master/capturas%20de%20pantalla/logo_inverso.png" alt="LogoInv" width="250"/>
+<img src="https://github.com/ismaeee/rfid_transports/blob/master/capturas%20de%20pantalla/logo_dif.png" alt="LogoInv" width="150"/> Logo secundario
 
 
 
 ## Panel inicial y Login
 
-<img src="https://github.com/ismaeee/rfid_transports/blob/master/capturas%20de%20pantalla/1.jpg" alt="Inicial" width="250"/>
+<img src="https://github.com/ismaeee/rfid_transports/blob/master/capturas%20de%20pantalla/1.jpg" alt="Inicial" width="100"/>
 
