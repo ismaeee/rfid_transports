@@ -1,11 +1,16 @@
-# rfid_transports
+# RFID_Transports
 Aplicación Android creada como parte del TFG realizado en la Escuela Superior de Ingeniería - UCA
+Aplicación de gestión de alertas para pagos seguros mediante tarjetas Mifare Classic.
+
+
+## Logotipo de la aplicación:
+<img src="https://github.com/ismaeee/rfid_transports/blob/master/capturas%20de%20pantalla/logo_inverso_dif.png" alt="Logo" width="250"/>
+
+<img src="https://github.com/ismaeee/rfid_transports/blob/master/capturas%20de%20pantalla/logo_inverso.png" alt="LogoInv" width="250"/>
 
 
 
-# Pantalla inicial
-![alt tag](https://github.com/ismaeee/rfid_transports/blob/master/capturas%20de%20pantalla/1.jpg "Pantalla inicial" {width=40px height=400px})
+## Panel inicial y Login
 
-
-# Pantalla de Login
+<img src="https://github.com/ismaeee/rfid_transports/blob/master/capturas%20de%20pantalla/1.jpg" alt="Inicial" width="250"/>
 
