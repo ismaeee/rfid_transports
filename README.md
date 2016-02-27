@@ -1,5 +1,5 @@
 # RFID_Transports
-Aplicación Android creada como parte del TFG realizado en la Escuela Superior de Ingeniería - UCA, Nota del proyecto global: 9 <br/>
+Aplicación Android creada como parte del TFG realizado en la Escuela Superior de Ingeniería - UCA <br/>
 Aplicación de gestión de alertas mediante la plataforma creada para pagos seguros mediante tarjetas MIFARE CLASSIC.
 
 
